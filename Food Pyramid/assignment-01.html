@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Assignment-01</title>
+<link rel="stylesheet" href="assignment-01.css">
+<script src="assignment-01.js"></script>
+	<meta name="author" content="Brian Phelan">
+	<meta name="student number" content="18401696">
+	<meta name="module" content="CS230">
+</head>
+<body>
+<!--Container for overall pyramid which includes all trapezoids, the triangle at the top
+and the food numbers for each level.-->
+	<div class="container">
+
+		<!--Top level of the pyramid-->
+		<div id="p6">
+			<!--Level 6 input div class-->
+			<div class="food-6">
+				<!--inputs for the food number, add button and minus button-->
+				<!--Each button has a decrement/increment function attached as well as-->
+				<!--a function to change the color of the number when one of the other functions-->
+				<!--is called-->
+					<input type="button" onclick="decrementValue('number6');changeColour('number6')" value="-" id="b11"/>
+					<label for="number6"></label><input type="text" id="number6" value="0" style="background-color: red"/>
+					<input type="button" onclick="incrementValue('number6');changeColour('number6')" value="+" id="b12"/>
+			</div>
+		</div>
+
+		<!--Space between level 5 and level 6 of the pyramid-->
+		<div id="p5-5"></div>
+		<!--Level 5 of the pyramid-->
+		<div id="p5">
+			<!--Common input class-->
+			<div class="food">
+					<input type="button" onclick="decrementValue('number5');changeColour('number5')" value="-" id="b9"/>
+					<label for="number5"></label><input type="text" id="number5" value="1" style="background-color: blue"/>
+					<input type="button" onclick="incrementValue('number5');changeColour('number5')" value="+" id="b10"/>
+			</div>
+		</div>
+
+		<!--Space between level 4 and level 5 of the pyramid-->
+		<div id="p4-5"></div>
+
+		<!--Level 4 of the pyramid-->
+		<div id="p4">
+			<!--Common input class-->
+			<div class="food">
+					<input type="button" onclick="decrementValue('number4');changeColour('number4')" value="-" id="b7"/>
+					<label for="number4"></label><input type="text" id="number4" value="2" style="background-color: green"/>
+					<input type="button" onclick="incrementValue('number4');changeColour('number4')" value="+" id="b8"/>
+			</div>
+		</div>
+
+		<!--Level 3 of the pyramid-->
+		<div id="p3">
+			<!--Common input class-->
+			<div class="food">
+				<form>
+					<input type="button" onclick="decrementValue('number3');changeColour('number3')" value="-" id="b5"/>
+					<label for="number3"></label><input type="text" id="number3" value="3" style="background-color: yellow"/>
+					<input type="button" onclick="incrementValue('number3');changeColour('number3')" value="+" id="b6"/>
+				</form>
+			</div>
+		</div>
+
+		<!--Level 2 of the pyramid-->
+		<div id="p2">
+			<!--Common input class-->
+			<div class="food">
+					<input type="button" onclick="decrementValue('number2');changeColour('number2')" value="-" id="b3"/>
+					<label for="number2"></label><input type="text" id="number2" value="4" style="background-color: purple"/>
+					<input type="button" onclick="incrementValue('number2');changeColour('number2')" value="+" id="b4"/>
+			</div>
+		</div>
+
+		<!--Level 1 of the pyramid-->
+			<div id="p1">
+				<!--Level 1 input class-->
+				<div class="food-1">
+						<input type="button" onclick="decrementValue('number1');changeColour('number1')" value="-" id="b2"/>
+						<label for="number1"></label><input type="text" id="number1" value="6" style="background-color: pink"/>
+						<input type="button" onclick="incrementValue('number1');changeColour('number1')" value="+" id="b1"/>
+				</div>
+			</div>
+		<!--End container div-->
+		</div>
+
+	<!--Input class for inputting date of submission-->
+		<div class="inputs">
+			<label for="date">Enter Date of Submission:</label>
+			<input type="date" id="date" value="0"/>
+			<!--printDate() function is called on button click and prints-->
+			<!--inputted date to the screen-->
+			<input type="button" id="record" onclick="printDate()" value="Record"/>
+		</div>
+
+		<!--div for the printed date-->
+		<div id="subDate"></div>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!--Tested with Google Chrome (Version 80.0.3987.132 (Official Build) (64-bit))-->
+<!--Created, modified and tested on Macbook Pro running MacOS Mojave (Version 10.14.6 (18G103))-->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simon Memory Game</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="assignment-02.css">
+    <!--FONT-->
+    <link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet">
+    <!--META INFORMATION-->
+    <meta name="author" content="Brian Phelan">
+    <meta name="student number" content="18401696">
+    <meta name="module" content="CS230">
+</head>
+<body>
+<!--Container for entire game-->
+<div class="game">
+    <!--Hidden square to place objects within-->
+    <div id="square">
+        <!--Inner circle-->
+        <div id="display">
+            <!--Score counters and start button-->
+            <div id="controls">
+                <div id="box1">
+                    <div id="Highscore">00</div>
+                </div>
+                <button class="button" id="startButton">START</button>
+                <div id="box2">
+                    <div id="Currentscore">00</div>
+                </div>
+                <div id="powerLight"></div>
+            </div>
+        </div>
+        <!--Color Buttons-->
+        <div id="greenback">
+            <div id="green"></div>
+        </div>
+        <div id="redback">
+            <div id="red"></div>
+        </div>
+        <div id="yellowback">
+            <div id="yellow"></div>
+        </div>
+        <div id="blueback">
+            <div id="blue"></div>
+        </div>
+    </div>
+</div>
+<!--Welcome Header-->
+<h3>Welcome to the Simon Memory Game</h3>
+<!--JS-->
+<script src="assignment-02.js"></script>
+</body>
+</html>

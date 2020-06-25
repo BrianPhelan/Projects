@@ -1,0 +1,163 @@
+<!--Tested with Google Chrome (Version 80.0.3987.132 (Official Build) (64-bit))-->
+<!--Created, modified and tested on Macbook Pro running MacOS Mojave (Version 10.14.6 (18G103))-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Grades</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="assignment-03.css">
+    <!--JQUERY-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!--META INFORMATION-->
+    <meta name="author" content="Brian Phelan">
+    <meta name="student number" content="18401696">
+    <meta name="module" content="CS230">
+</head>
+<!--Onload find the average of table values-->
+<!--Onunload save the table as a cookie-->
+<body onload="findAvg();" onunload="saveTable()">
+
+<!--TABLE-->
+    <table id="table">
+        <!--Header Row-->
+        <tr>
+            <th id="studentName"><h3>Student Name</h3></th>
+            <th id="studentID"><h3>Student ID</h3></th>
+            <th id="as1"><h3>Assignment 1</h3></th>
+            <th id="as2"><h3>Assignment 2</h3></th>
+            <th id="as3"><h3>Assignment 3</h3></th>
+            <th id="as4"><h3>Assignment 4</h3></th>
+            <th id="as5"><h3>Assignment 5</h3></th>
+            <th id="finalgrade"><h3>Average [%]</h3></th>
+        </tr>
+        <!--Student Row-->
+        <tr>
+            <td align="left">Thor Odinson</td>
+            <td align="left">18401006</td>
+            <!--Align Right, Allow the cell to be edited by user, when edited update the table, when cell is clicked remove existing characters-->
+            <td class="assignments" align="right" contenteditable="true" onkeyup="findAvg()" onclick="this.textContent=''">-</td>
+            <td class="assignments" align="right" contenteditable="true" onkeyup="findAvg()" onclick="this.textContent=''">-</td>
+            <td class="assignments" align="right" contenteditable="true" onkeyup="findAvg()" onclick="this.textContent=''">-</td>
+            <td class="assignments" align="right" contenteditable="true" onkeyup="findAvg()" onclick="this.textContent=''">-</td>
+            <td class="assignments" align="right" contenteditable="true" onkeyup="findAvg()" onclick="this.textContent=''">-</td>
+            <td class="finalmark" align="right"></td>
+        </tr>
+        <!--Student Row-->
+        <tr>
+            <td align="left">Marsellus Wallace</td>
+            <td align="left">18401900</td>
+            <td class="assignments" align="right" contenteditable="true" onkeyup="findAvg()" onclick="this.textContent=''">-</td>
+            <td class="assignments" align="right" contenteditable="true" onkeyup="findAvg()" onclick="this.textContent=''">-</td>
+            <td class="assignments" align="right" contenteditable="true" onkeyup="findAvg()" onclick="this.textContent=''">-</td>
+            <td class="assignments" align="right" contenteditable="true" onkeyup="findAvg()" onclick="this.textContent=''">-</td>
+            <td class="assignments" align="right" contenteditable="true" onkeyup="findAvg()" onclick="this.textContent=''">-</td>
+            <td class="finalmark" align="right"></td>
+        </tr>
+        <!--Student Row-->
+        <tr>
+            <td align="left">Jules Winnfield</td>
+            <td align="left">18401800</td>
+            <td class="assignments" align="right" contenteditable="true" onkeyup="findAvg()" onclick="this.textContent=''">-</td>
+            <td class="assignments" align="right" contenteditable="true" onkeyup="findAvg()" onclick="this.textContent=''">-</td>
+            <td class="assignments" align="right" contenteditable="true" onkeyup="findAvg()" onclick="this.textContent=''">-</td>
+            <td class="assignments" align="right" contenteditable="true" onkeyup="findAvg()" onclick="this.textContent=''">-</td>
+            <td class="assignments" align="right" contenteditable="true" onkeyup="findAvg()" onclick="this.textContent=''">-</td>
+            <td class="finalmark" align="right"></td>
+        </tr>
+        <!--Student Row-->
+        <tr>
+            <td align="left">Vincent Vega</td>
+            <td align="left">18401000</td>
+            <td class="assignments" align="right" contenteditable="true" onkeyup="findAvg()" onclick="this.textContent=''">-</td>
+            <td class="assignments" align="right" contenteditable="true" onkeyup="findAvg()" onclick="this.textContent=''">-</td>
+            <td class="assignments" align="right" contenteditable="true" onkeyup="findAvg()" onclick="this.textContent=''">-</td>
+            <td class="assignments" align="right" contenteditable="true" onkeyup="findAvg()" onclick="this.textContent=''">-</td>
+            <td class="assignments" align="right" contenteditable="true" onkeyup="findAvg()" onclick="this.textContent=''">-</td>
+            <td class="finalmark" align="right"></td>
+        </tr>
+        <!--Student Row-->
+        <tr>
+            <td align="left">Butch Coolidge</td>
+            <td align="left">18401231</td>
+            <td class="assignments" align="right" contenteditable="true" onkeyup="findAvg()" onclick="this.textContent=''">-</td>
+            <td class="assignments" align="right" contenteditable="true" onkeyup="findAvg()" onclick="this.textContent=''">-</td>
+            <td class="assignments" align="right" contenteditable="true" onkeyup="findAvg()" onclick="this.textContent=''">-</td>
+            <td class="assignments" align="right" contenteditable="true" onkeyup="findAvg()" onclick="this.textContent=''">-</td>
+            <td class="assignments" align="right" contenteditable="true" onkeyup="findAvg()" onclick="this.textContent=''">-</td>
+            <td class="finalmark" align="right"></td>
+        </tr>
+        <!--Student Row-->
+        <tr>
+            <td align="left">Mia Wallace</td>
+            <td align="left">18401656</td>
+            <td class="assignments" align="right" contenteditable="true" onkeyup="findAvg()" onclick="this.textContent=''">-</td>
+            <td class="assignments" align="right" contenteditable="true" onkeyup="findAvg()" onclick="this.textContent=''">-</td>
+            <td class="assignments" align="right" contenteditable="true" onkeyup="findAvg()" onclick="this.textContent=''">-</td>
+            <td class="assignments" align="right" contenteditable="true" onkeyup="findAvg()" onclick="this.textContent=''">-</td>
+            <td class="assignments" align="right" contenteditable="true" onkeyup="findAvg()" onclick="this.textContent=''">-</td>
+            <td class="finalmark" align="right"></td>
+        </tr>
+        <!--Student Row-->
+        <tr>
+            <td align="left">Quentin Tarantino</td>
+            <td align="left">18405423</td>
+            <td class="assignments" align="right" contenteditable="true" onkeyup="findAvg()" onclick="this.textContent=''">-</td>
+            <td class="assignments" align="right" contenteditable="true" onkeyup="findAvg()" onclick="this.textContent=''">-</td>
+            <td class="assignments" align="right" contenteditable="true" onkeyup="findAvg()" onclick="this.textContent=''">-</td>
+            <td class="assignments" align="right" contenteditable="true" onkeyup="findAvg()" onclick="this.textContent=''">-</td>
+            <td class="assignments" align="right" contenteditable="true" onkeyup="findAvg()" onclick="this.textContent=''">-</td>
+            <td class="finalmark" align="right"></td>
+        </tr>
+        <!--Student Row-->
+        <tr>
+            <td align="left">Clarise Starling</td>
+            <td align="left">18401987</td>
+            <td class="assignments" align="right" contenteditable="true" onkeyup="findAvg()" onclick="this.textContent=''">-</td>
+            <td class="assignments" align="right" contenteditable="true" onkeyup="findAvg()" onclick="this.textContent=''">-</td>
+            <td class="assignments" align="right" contenteditable="true" onkeyup="findAvg()" onclick="this.textContent=''">-</td>
+            <td class="assignments" align="right" contenteditable="true" onkeyup="findAvg()" onclick="this.textContent=''">-</td>
+            <td class="assignments" align="right" contenteditable="true" onkeyup="findAvg()" onclick="this.textContent=''">-</td>
+            <td class="finalmark" align="right"></td>
+        </tr>
+        <!--Student Row-->
+        <tr>
+            <td align="left">Will Graham</td>
+            <td align="left">18400000</td>
+            <td class="assignments" align="right" contenteditable="true" onkeyup="findAvg()" onclick="this.textContent=''">-</td>
+            <td class="assignments" align="right" contenteditable="true" onkeyup="findAvg()" onclick="this.textContent=''">-</td>
+            <td class="assignments" align="right" contenteditable="true" onkeyup="findAvg()" onclick="this.textContent=''">-</td>
+            <td class="assignments" align="right" contenteditable="true" onkeyup="findAvg()" onclick="this.textContent=''">-</td>
+            <td class="assignments" align="right" contenteditable="true" onkeyup="findAvg()" onclick="this.textContent=''">-</td>
+            <td class="finalmark" align="right"></td>
+        </tr>
+        <!--Student Row-->
+        <tr>
+            <td align="left">Thomas Harris</td>
+            <td align="left">18401111</td>
+            <td class="assignments" align="right" contenteditable="true" onkeyup="findAvg()" onclick="this.textContent=''">-</td>
+            <td class="assignments" align="right" contenteditable="true" onkeyup="findAvg()" onclick="this.textContent=''">-</td>
+            <td class="assignments" align="right" contenteditable="true" onkeyup="findAvg()" onclick="this.textContent=''">-</td>
+            <td class="assignments" align="right" contenteditable="true" onkeyup="findAvg()" onclick="this.textContent=''">-</td>
+            <td class="assignments" align="right" contenteditable="true" onkeyup="findAvg()" onclick="this.textContent=''">-</td>
+            <td class="finalmark" align="right"></td>
+        </tr>
+
+    </table>
+<!--Number of Unsubmitted Assignments-->
+    <div id="assignmentsSub"></div>
+<!--Button to add column-->
+    <button id= "addColumn" onclick="addColumn()">Add New Assignment</button>
+<!--Button to add row-->
+    <button id="addRow" onclick="addRow()">Add New Student</button>
+<!--Button to save table manually-->
+    <button id="saveTable" onclick="saveTable()">Save Table</button>
+<!--Button to restore table-->
+    <button id="restoreTable" onclick="restoreTable()">Reset to Previous Save</button>
+<!--Button to remove last row-->
+    <button id="remove" onclick="removeRow()">Delete Last Row</button>
+    <div id="check"></div>
+<!--JAVASCRIPT-->
+<script src="assignment-03.js"></script>
+</body>
+</html>

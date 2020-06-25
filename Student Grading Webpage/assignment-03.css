@@ -1,0 +1,100 @@
+/*Set to collapse*/
+table {
+    border-collapse: collapse;
+}
+
+/*Set table row/cell properties*/
+table, th, td {
+    border: 2px solid black;
+    font-family: sans-serif;
+    height: 40px;
+}
+
+/*Alternating background color*/
+tr:nth-child(even) {
+    background-color: lightgrey;
+}
+
+/*Alternating background color*/
+tr:nth-child(odd) {
+    background-color: rgba(128, 128, 128, 0.51);
+}
+
+/*Set table header properties*/
+th {
+    background-color: grey;
+}
+
+/*Set heading text property*/
+h3 {
+    alignment: center;
+    font-family: sans-serif;
+}
+
+/*Set unsubmitted assignment text properties*/
+#assignmentsSub {
+    padding-top: 10px;
+    font-family: sans-serif;
+    font-size: 18px;
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+
+/*Set add row button properties*/
+#addRow {
+     border-radius: 4px;
+     width: 140px;
+     height: 60px;
+     background-color: lightsteelblue;
+     font-weight: bold;
+     font-size: 20px;
+    font-family: sans-serif;
+
+}
+/*Set add column button properties*/
+#addColumn {
+    border-radius: 4px;
+    width: 150px;
+    height: 60px;
+    background-color: lightsteelblue;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: sans-serif;
+
+}
+
+/*Set save table button properties*/
+#saveTable {
+     border-radius: 4px;
+     width: 80px;
+     height: 60px;
+     background-color: lightsteelblue;
+     font-weight: bold;
+     font-size: 20px;
+    font-family: sans-serif;
+
+}
+
+/*Set restore table button properties*/
+#restoreTable {
+    border-radius: 4px;
+    width: 170px;
+    height: 60px;
+    background-color: lightsteelblue;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: sans-serif;
+
+}
+
+/*Set delete row button properties*/
+#remove {
+    border-radius: 4px;
+    width: 120px;
+    height: 60px;
+    background-color: lightsteelblue;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: sans-serif;
+
+}

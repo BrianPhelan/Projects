@@ -1,0 +1,196 @@
+/*Page background*/
+body {
+    background-color: grey;
+}
+
+/*Container for game*/
+.game {
+    position: fixed;
+    top: 25%;
+    left: 25%;
+}
+
+/*Welcome header*/
+h3 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 30px;
+}
+
+/*Green shape background*/
+#greenback {
+    width: 150px;
+    height: 150px;
+    background-color: black;
+    border: 9px solid black;
+    border-radius: 50%;
+    position: absolute;
+    left: -10%;
+    top: -10%;
+}
+
+/*Green Button*/
+#green {
+    width: 150px;
+    height: 150px;
+    background-color: green;
+    border-radius: 50%;
+    position: relative;
+    margin: 0 auto;
+
+}
+
+#redback {
+    width: 150px;
+    height: 150px;
+    background-color: black;
+    border: 9px solid black;
+    border-radius: 50%;
+    position: absolute;
+    right: -10%;
+    top: -10%;
+}
+
+#red {
+    width: 150px;
+    height: 150px;
+    background-color: red;
+    border-radius: 50%;
+    position: relative;
+    margin: 0 auto;
+}
+
+#yellowback {
+    width: 150px;
+    height: 150px;
+    background-color: black;
+    border: 9px solid black;
+    border-radius: 50%;
+    position: absolute;
+    left: -10%;
+    bottom: -10%;
+}
+
+
+#yellow {
+    width: 150px;
+    height: 150px;
+    background-color: gold;
+    border-radius: 50%;
+    position: relative;
+    margin: 0 auto;
+}
+
+#blueback {
+    width: 150px;
+    height: 150px;
+    background-color: black;
+    border: 9px solid black;
+    border-radius: 50%;
+    position: absolute;
+    right: -10%;
+    bottom: -10%;
+}
+
+#blue {
+    width: 150px;
+    height: 150px;
+    background-color: blue;
+    border-radius: 50%;
+    position: relative;
+    margin: 0 auto;
+}
+
+/*Hidden sqaure for placement of circles*/
+#square {
+    width: 400px;
+    height: 400px;
+    background-color: transparent;
+    position: relative;
+    text-align: center;
+    display: flex;
+}
+
+/*Inner cirlce*/
+#display {
+    width: 400px;
+    height: 400px;
+    border-radius: 200px;
+    background-color: #0f0f0f;
+    position: relative;
+    text-align: center;
+    display: flex;
+}
+
+/*Score and button container*/
+#controls {
+    margin: auto;
+    position: relative;
+    text-align: center;
+
+}
+
+/*Box for highscore*/
+#box1 {
+    position: relative;
+    width: 60px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: lightgrey;
+    vertical-align: bottom;
+    display: inline-block;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 30px;
+}
+
+/*Highscore score counter*/
+#Highscore {
+    position: relative;
+    text-align: center;
+    top: 12%;
+}
+
+/*Box for current score*/
+#box2 {
+    position: relative;
+    width: 60px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: lightgrey;
+    /*text-align: center;*/
+    display: inline-block;
+    vertical-align: bottom;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 30px;
+}
+
+/*current score counter*/
+#Currentscore {
+    position: absolute;
+    top: 12%;
+    left: 8%;
+
+}
+
+/*start button*/
+#startButton {
+    position: relative;
+    width: 130px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: lightgrey;
+    text-align: center;
+    display: inline-block;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 30px;
+
+}
+
+
+/*Power light*/
+#powerLight {
+    background-color: red;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 10px auto;
+}

@@ -1,0 +1,23 @@
+Code References:
+
+Game Research:
+https://www.mathsisfun.com/games/simon-says.html
+https://www.youtube.com/watch?v=W0MxUHlZo6U
+https://danielcodes.github.io/2017/02/25/simon-game/
+https://codepen.io/nthnmillar/pen/VrmjZB
+
+JavaScript Functions:
+Query Selector
+    https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector
+
+Event Listener
+    https://www.w3schools.com/js/js_htmldom_eventlistener.asp
+
+Arrow Function
+    https://www.w3schools.com/js/js_arrow_function.asp
+
+Timeout/Interval
+    https://www.w3schools.com/js/js_timing.asp
+
+Slice()
+    https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice

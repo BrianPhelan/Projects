@@ -1,0 +1,399 @@
+.container {
+  text-align: center;
+  position: relative;
+  top: 40%;
+}
+
+/*Style for numbers and buttons within the shapes*/
+.food-1 {
+    display: inline-block;
+    position: absolute;
+    top: 20px;
+    left: 248px;
+    text-align: center;
+    bottom: -65px;
+}
+
+.food {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    bottom: -25px;
+ }
+
+.food-6 {
+    display: flex;
+    position: relative;
+    text-align: center;
+    bottom: -120px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#p6 {
+    border-bottom: 200px solid blue;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    height: 0;
+    width: 0;
+    margin-right:auto;
+    margin-left:auto;
+}
+
+#p5-5 {
+    border-bottom: 20px solid transparent;
+    border-left: 45px solid transparent;
+    border-right: 45px solid transparent;
+    height: 0;
+    width: 10px;
+    margin-right:auto;
+    margin-left:auto;
+}
+
+#p5 {
+    border-bottom: 80px solid grey;
+    border-left: 45px solid transparent;
+    border-right: 45px solid transparent;
+    height: 0;
+    width: 220px;
+    margin-right:auto;
+    margin-left:auto;
+}
+
+#p4-5 {
+    border-bottom: 20px solid transparent;
+    border-left: 45px solid transparent;
+    border-right: 45px solid transparent;
+    height: 0;
+    width: 240px;
+    margin-right:auto;
+    margin-left:auto;
+}
+
+#p4 {
+    border-bottom: 80px solid purple;
+    border-left: 45px solid transparent;
+    border-right: 45px solid transparent;
+    height: 0;
+    width: 330px;
+    margin-right:auto;
+    margin-left:auto;
+}
+
+#p3 {
+    border-bottom: 80px solid green;
+    border-left: 45px solid transparent;
+    border-right: 45px solid transparent;
+    height: 0;
+    width: 420px;
+    margin-right:auto;
+    margin-left:auto;
+}
+
+#p2 {
+    border-bottom: 80px solid yellow;
+    border-left: 45px solid transparent;
+    border-right: 45px solid transparent;
+    height: 0;
+    width: 510px;
+    margin-right:auto;
+    margin-left:auto;
+}
+
+#p1 {
+	position: relative;
+	top: 40%;
+    border-bottom: 80px solid red;
+    border-left: 45px solid transparent;
+    border-right: 45px solid transparent;
+    height: 0;
+    width: 600px;
+    margin-right:auto;
+    margin-left:auto;
+}
+
+/*When cursor hovers over each element, show the plus and minus signs*/
+#p1:hover #b1{
+    visibility: visible;
+}
+
+#p1:hover #b2{
+    visibility: visible;
+}
+
+#p2:hover #b3{
+    visibility: visible;
+}
+
+#p2:hover #b4{
+    visibility: visible;
+}
+
+#p3:hover #b5{
+    visibility: visible;
+}
+
+#p3:hover #b6{
+    visibility: visible;
+}
+
+#p4:hover #b7{
+    visibility: visible;
+}
+
+#p4:hover #b8{
+    visibility: visible;
+}
+
+#p5:hover #b9{
+    visibility: visible;
+}
+
+#p5:hover #b10{
+    visibility: visible;
+}
+
+#p6:hover #b11{
+    visibility: visible;
+}
+
+#p6:hover #b12{
+    visibility: visible;
+}
+
+.button {
+	margin-right:auto;
+    margin-left:auto;
+    position: relative;
+}
+
+/*Style for buttons and number in between*/
+/*Number will always be shown while the buttons remain*/
+/*invisible until hovered over*/
+#b1 {
+	display: inline-block;
+    visibility: hidden;
+	height: 25px;
+	width: 30px;
+	border-radius: 50%;
+	border: solid black;
+    text-align: center;
+}
+
+#number1 {
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    border: solid black;
+    text-align: center;
+}
+
+#b2 {
+    display: inline-block;
+    visibility: hidden;
+    height: 25px;
+    width: 30px;
+    border-radius: 50%;
+    border: solid black;
+    text-align: center;
+}
+
+#b3 {
+    display: inline-block;
+    visibility: hidden;
+    height: 25px;
+    width: 30px;
+    border-radius: 50%;
+    border: solid black;
+    text-align: center;
+}
+
+#number2 {
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    border: solid black;
+    text-align: center;
+}
+
+#b4 {
+    visibility: hidden;
+    display: inline-block;
+    height: 25px;
+    width: 30px;
+    border-radius: 50%;
+    border: solid black;
+    text-align: center;
+}
+
+#b5 {
+    visibility: hidden;
+    display: inline-block;
+    height: 25px;
+    width: 30px;
+    border-radius: 50%;
+    border: solid black;
+    text-align: center;
+}
+
+#number3 {
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    border: solid black;
+    text-align: center;
+}
+
+#b6 {
+    visibility: hidden;
+    display: inline-block;
+    height: 25px;
+    width: 30px;
+    border-radius: 50%;
+    border: solid black;
+    text-align: center;
+}
+
+#b7 {
+    visibility: hidden;
+    display: inline-block;
+    height: 25px;
+    width: 30px;
+    border-radius: 50%;
+    border: solid black;
+    text-align: center;
+}
+
+#number4 {
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    border: solid black;
+    text-align: center;
+}
+
+#b8 {
+    visibility: hidden;
+    display: inline-block;
+    height: 25px;
+    width: 30px;
+    border-radius: 50%;
+    border: solid black;
+    text-align: center;
+}
+
+#b9 {
+    visibility: hidden;
+    display: inline-block;
+    height: 25px;
+    width: 30px;
+    border-radius: 50%;
+    border: solid black;
+    text-align: center;
+}
+
+#number5 {
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    border: solid black;
+    text-align: center;
+}
+
+#b10 {
+    visibility: hidden;
+    display: inline-block;
+    height: 25px;
+    width: 30px;
+    border-radius: 50%;
+    border: solid black;
+    text-align: center;
+}
+
+#b11 {
+    visibility: hidden;
+    float: left;
+    height: 25px;
+    width: 30px;
+    border-radius: 50%;
+    border: solid black;
+    text-align: center;
+}
+
+#number6 {
+    /*display: inline-flex;*/
+    float: left;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    border: solid black;
+    text-align: center;
+}
+
+#b12 {
+    visibility: hidden;
+    float: left;
+    height: 25px;
+    width: 30px;
+    border-radius: 50%;
+    border: solid black;
+    text-align: center;
+}
+
+/*Style for printed date*/
+#subDate {
+    display: inline-block;
+    position: relative;
+    height: 25px;
+    width: 200px;
+    border: transparent;
+    text-align: center;
+    font-family: "Arial Rounded MT Bold", sans-serif;
+    font-size: 20px;
+}
+/*style for date submission inputs*/
+.inputs {
+    display: inline-block;
+}
+
+#date {
+    border-radius: 40px;
+    display: inline-block;
+    position: relative;
+    margin: 10% auto;
+    text-align: center;
+    font-family: "Arial Rounded MT Bold", sans-serif;
+    font-size: 20px;
+    color: red;
+}
+
+/*style for when date is inputted*/
+#date:focus {
+    color: white;
+    background-color: red;
+}
+
+label {
+    font-family: "Arial Rounded MT Bold", sans-serif;
+}
+
+#record {
+    white-space: nowrap;
+    overflow: visible;
+    background-color: red;
+    color: aliceblue;
+    border-radius: 10px;
+    font-family: "Arial Rounded MT Bold", sans-serif;
+    font-size: 20px;
+}
+
+/*Style for when button is clicked*/
+#record:focus {
+    background-color: darkred;
+}
