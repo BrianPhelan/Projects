@@ -1,0 +1,4 @@
+1. Open the index.html file in your web browser
+2. When adding a new task, simply input your text in the input bar and click "Add"
+3. To mark a task as complete, click the task.
+4. To delete a task, hover over the delete tab at the end of the task and click to delete.

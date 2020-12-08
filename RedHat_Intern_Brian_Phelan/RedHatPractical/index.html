@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ToDo List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="ToDoHeader" class="header">
+        <h2>ToDo List</h2>
+        <input type="text" id="taskInput" placeholder="Task">
+        <span onclick="newTask()" class="addBtn">Add</span>
+    </div>
+
+    <h2 id="listCount" style="color: white"></h2>
+
+    <ul id="tasks">
+        <li>Task 1<span class="close">Delete</span></li>
+        <li>Task 2<span class="close">Delete</span></li>
+        <li>Task 3<span class="close">Delete</span></li>
+        <li>Task 4<span class="close">Delete</span></li>
+        <li class="checked">Task 5<span class="close">Delete</span></li>
+    </ul>
+
+    <script src="script.js"></script>
+</body>
+</html>
